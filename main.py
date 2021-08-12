@@ -1,9 +1,15 @@
 from turtle import Screen
+from paddle import Paddle
 
 screen = Screen()
-screen.listen()
 
 screen.bgcolor("black")
-screen.screensize(800, 600)
+screen.setup(width=800, height=600)
+screen.title("Pong")
+
+paddle = Paddle()
+screen.onkeypress(paddle.move_up, "Up")
+screen.onkeypress(paddle.move_down, "Down")
+screen.listen()
 
 screen.exitonclick()
