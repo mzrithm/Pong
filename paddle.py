@@ -1,30 +1,28 @@
-from turtle import Turtle, Screen
+from turtle import Turtle
 
 
-class Paddle:
+class Paddle(Turtle):  # Inherit all attributes of Turtle Class
     """A paddle object for interacting with ball in Pong game."""
 
-    def __init__(self):
+    def __init__(self, x_value, y_value):
         """Initializes paddle object with width, height,
         and starting coordinates
         """
-        self.paddle = Turtle()
-        self.x_pos = self.paddle.xcor()
-        self.y_pos = self.paddle.ycor()
-        self.paddle.hideturtle()
-        self.paddle.resizemode("user")
-        self.paddle.turtlesize(stretch_wid=5, stretch_len=1)
-        self.paddle.penup()
-        self.paddle.shape("square")
-        self.paddle.color("white")
-        self.paddle.setpos(350, 0)
-        self.paddle.showturtle()
+        super().__init__()  # Initialize Turtle Super class
+        self.hideturtle()
+        self.resizemode("user")
+        self.turtlesize(stretch_wid=5, stretch_len=1)
+        self.penup()
+        self.shape("square")
+        self.color("white")
+        self.setpos(x_value, y_value)
+        self.showturtle()
 
     def move_up(self):
-        self.paddle.goto(self.paddle.xcor(), self.paddle.ycor() + 20)
+        self.goto(self.xcor(), self.ycor() + 20)
 
     def move_down(self):
-        self.paddle.goto(self.paddle.xcor(), self.paddle.ycor() - 20)
+        self.goto(self.xcor(), self.ycor() - 20)
 
 
 
