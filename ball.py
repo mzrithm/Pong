@@ -12,7 +12,14 @@ class Ball(Turtle):
         self.setposition(0, 0)
 
     def move(self):
-        self.setheading(45)
-        self.speed("slow")
-        self.forward(10)
+        self.speed("slowest")
+        self.setpos(self.xcor() + 10, self.ycor() + 10)
+
+    def detect_collision(self):
+        if self.ycor() == 300 or self.ycor() == -300:
+            self.color("red")
+            angle = self.towards(0, 0)
+            print(angle)
+            # new_heading = self.heading() - 45
+            # self.setheading(new_heading)
 

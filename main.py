@@ -30,3 +30,4 @@ while game_is_on:
     time.sleep(.05)
     screen.update()
     ball.move()
+    ball.detect_collision()

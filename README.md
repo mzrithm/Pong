@@ -15,3 +15,8 @@ Pong Game in Python
 **Create Ball Class**
 - Width of 20px, Height of 20px
 - x_pos = 0, y_pos = 0
+
+**Detect Ball Collision w/ Wall**
+- Detect collision on top at bottom
+- Screen is 600px tall
+- Bounce ball
