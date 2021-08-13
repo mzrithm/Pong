@@ -9,14 +9,14 @@ class Paddle(Turtle):  # Inherit all attributes of Turtle Class
         and starting coordinates
         """
         super().__init__()  # Initialize Turtle Super class
-        self.hideturtle()
+        # self.hideturtle()
         self.resizemode("user")
         self.turtlesize(stretch_wid=5, stretch_len=1)
         self.penup()
         self.shape("square")
         self.color("white")
         self.setpos(x_value, y_value)
-        self.showturtle()
+        # self.showturtle()
 
     def move_up(self):
         self.goto(self.xcor(), self.ycor() + 20)

@@ -6,7 +6,12 @@ Pong Game in Python
 - Black background color
 - Exit on click
 
-**Create Right Paddle**
+**Create Right Paddle & Left Paddle**
 - Width of 200px, Height of 100px
-- x_pos = 350, y_pos = 0
+- Right: x_pos = 350, y_pos = 0
+- Left: x_pos = 350, y_pos = 0
 - Key press should move paddle up and down by 20px
+
+**Create Ball Class**
+- Width of 20px, Height of 20px
+- x_pos = 0, y_pos = 0
