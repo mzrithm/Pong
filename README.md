@@ -20,3 +20,11 @@ Pong Game in Python
 - Detect collision on top at bottom
 - Screen is 600px tall
 - Bounce ball
+
+**Detect Ball Collision w/ Paddles**
+- Detect collision w/ paddle and bounce
+- Paddles are at x = 350 and x = -350
+
+**Detect Ball Missing Paddle**
+- Calculate point scored for other player
+- Reset Ball to origin and have it start in opposite direction

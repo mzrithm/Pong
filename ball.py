@@ -12,6 +12,9 @@ class Ball(Turtle):
         self.setposition(0, 0)
         self.x_move = 10
         self.y_move = 10
+        self.right_hit = 0
+        self.left_hit = 0
+        print(self.heading())
 
     def move(self):
         # self.speed("slowest")
@@ -22,3 +25,8 @@ class Ball(Turtle):
 
     def x_bounce(self):
         self.x_move *= -1
+
+    def reset(self):
+        self.setposition(0, 0)
+        self.x_move *= -1
+        self.y_move *= -1
