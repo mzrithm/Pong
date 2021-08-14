@@ -3,7 +3,6 @@ from paddle import Paddle
 from ball import Ball
 import time
 
-
 screen = Screen()
 
 screen.bgcolor("black")
@@ -30,4 +29,15 @@ while game_is_on:
     time.sleep(.05)
     screen.update()
     ball.move()
-    ball.detect_collision()
+    if ball.ycor() == 300 or ball.ycor() == -300:
+        ball.y_bounce()
+    if ball.xcor() == 400 or ball.xcor() == -400:
+        ball.x_bounce()
+    if ball.xcor() == 340:
+        if ball.ycor() < right_paddle.ycor() + 80:
+            if ball.ycor() > right_paddle.ycor() - 80:
+                ball.x_bounce()
+    if ball.xcor() == -340:
+        if ball.ycor() < left_paddle.ycor() + 80:
+            if ball.ycor() > left_paddle.ycor() - 80:
+                ball.x_bounce()

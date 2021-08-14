@@ -10,16 +10,15 @@ class Ball(Turtle):
         self.color("white")
         self.penup()
         self.setposition(0, 0)
+        self.x_move = 10
+        self.y_move = 10
 
     def move(self):
-        self.speed("slowest")
-        self.setpos(self.xcor() + 10, self.ycor() + 10)
+        # self.speed("slowest")
+        self.setpos(self.xcor() + self.x_move, self.ycor() + self.y_move)
 
-    def detect_collision(self):
-        if self.ycor() == 300 or self.ycor() == -300:
-            self.color("red")
-            angle = self.towards(0, 0)
-            print(angle)
-            # new_heading = self.heading() - 45
-            # self.setheading(new_heading)
+    def y_bounce(self):
+        self.y_move *= -1
 
+    def x_bounce(self):
+        self.x_move *= -1

@@ -29,4 +29,3 @@ class Paddle(Turtle):  # Inherit all attributes of Turtle Class
 
 
 
-
