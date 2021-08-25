@@ -1,4 +1,4 @@
-# Pong
+# pong
 Pong Game in Python
 
 **Create Screen**
