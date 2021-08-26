@@ -1,6 +1,8 @@
 # pong
 Pong Game in Python
 
+![Screenshot of classic Pong Game with two paddles, ball in play, and a score of 10 to 11.](https://github.com/mzrithm/pong/blob/8e20e0bc9861f9b2409d6ab565e5eb9f61241366/screenshots/Screen%20Shot%202021-08-26%20at%204.00.29%20PM.png)
+
 **Create Screen**
 - Height of 600px, Width of 800px
 - Black background color
