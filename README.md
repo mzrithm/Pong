@@ -1,6 +1,6 @@
-# pong
+# 🏓 pong
 
-This is my version of the classic **Pong Game** 
+This is my version of the classic **Pong Game**. 
 
 This game was created using the [Turtle Module](https://docs.python.org/3/library/turtle.html) 🐢 and [Python](https://www.python.org/about/gettingstarted/) 🐍.
 
